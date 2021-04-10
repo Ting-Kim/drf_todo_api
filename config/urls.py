@@ -16,15 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from quickstart import views
+from todo import views
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
-
+router.register(r'todos', views.TodoViewSet)
+router.register(r'comments', views.CommentViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('todos/', include('todo.urls', namespace='todo')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('todo/', include('todo.urls', namespace='todo')),
+    # path('', ListTodos.as_view(), name='list_todo'),
 ]
