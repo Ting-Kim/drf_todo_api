@@ -15,10 +15,33 @@
 > pip install django-dotenv==1.4.2
 
 ❗ And, you have to create `.env` file in root.
+```
+Project tree
+------------
+root
+├── .env            ### here
+├── README.md
+├── config
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── db.sqlite3
+├── manage.py
+├── requirements.txt
+└── todo
+    ├── __init__.py
+    ├── admin.py
+    ├── apps.py
+    ├── models.py
+    ├── serializers.py
+    ├── tests.py
+    ├── urls.py
+    └── views.py
+```
 then, please insert secret key (you can get at https://djskgen.herokuapp.com/)
 ```
-(in .env file)
-
 SECRET_KEY="value"
 DEBUG=True
 ```
