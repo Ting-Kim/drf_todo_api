@@ -13,6 +13,15 @@
 > pip install djangorestframework==3.12.4
 
 > pip install django-dotenv==1.4.2
+
+❗ And, you have to create `.env` file in root.
+then, please insert secret key (you can get at https://djskgen.herokuapp.com/)
+```
+(in .env file)
+
+SECRET_KEY="value"
+DEBUG=True
+```
 <br>
 
 ### 📃 API Descriptions
