@@ -5,11 +5,15 @@
   - provide CRUD function
 - implemented using Django REST Framework
 - todo list have comments
+<br>
 
 ### ⚙ Envirionments (python 3.8.0)
 > pip install django==3.1.7
+
 > pip install djangorestframework==3.12.4
+
 > pip install django-dotenv==1.4.2
+<br>
 
 ### 📃 API Descriptions
 
@@ -25,6 +29,7 @@
 - POST "todos/<int:todo_id>/comments/" - Comment create
 - PATCH "todos/<int:todo_id>/comments/<int:comment_id>" - Comment update
 - DELETE "todos/<int:todo_id>/comments/<int:comment_id>" - Comment delete
+<br>
 
 ### ▶ Execution
 > pip install httpie
@@ -70,3 +75,4 @@ http patch todos/<int:todo_id>/comments/<int:comment_id>/ contents="write a comm
 http delete todos/<int:todo_id>/comments/<int:comment_id>/
 
 ```
+<br>
